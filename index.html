@@ -1,0 +1,25 @@
+<div id="app" class="container">
+  <h1>OTP VALIDATION</h1>
+<form>
+  <input type="text" id="1" class="a" maxlength="1" pattern="[0-9]{1}" autofocus onkeyup="valid(this)">
+  <input type="text" id="2" class="a" maxlength="1" pattern="[0-9]{1}" onkeyup="valid(this)" >
+  <input type="text" id="3" class="a" maxlength="1" pattern="[0-9]{1}" onkeyup="valid(this)" >
+  <input type="text" id="4" class="a" maxlength="1" pattern="[0-9]{1}" onkeyup="valid(this)">
+  <br><br>
+  <input id="5" onclick="submited()" class="b" type="submit">
+</form>
+</div>
+<script>
+  function valid(x) {
+      var y = x.value;
+      if (y && y.length === 1) {
+          var num = parseInt(x.id);
+          var nextnum = num + 1;
+          var z = document.getElementById(nextnum.toString());
+          z.focus(); 
+      }
+  }
+function submited() {
+      alert("Validated");
+  }
+</script>

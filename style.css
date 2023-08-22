@@ -1,0 +1,15 @@
+.a{
+	width:25px;
+  border-radius: 10px;
+  height: 25px;
+	}
+	.b{
+	background:green;
+	color:white;
+	border:none;
+	height:25px;
+  border-radius: 10px;
+	}
+	.container{
+	text-align:center;
+	}
